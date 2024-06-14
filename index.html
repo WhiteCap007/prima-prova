@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="it">
+   
+    
+<head>
+    <title>Register Form</title>
+    <link rel="stylesheet" href="stileprimo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<main>
+<body>
+<h1 class="title">Survey Form</h1>
+<p class="cacca">Hi! Here you can register your data!</p>
+<form method="post" action="file:///C:/Users/Administrator/Desktop/Programmi%20HTML/primo.html">
+<fieldset class="anagrafici"><label for="name">Name  <input type="text" id="name" name="name"/></label>
+<label for="email">Email  <input type="email" id="email" name="email"/></label>
+<label for="age">Age  <input type="number" id="age" name="age" min="18"/></label>
+<label for="password">Password  <input type="password" id="password" name="password" placeholder="Insert your Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"required/></label>
+<details class="sommario">
+    <summary class="sommario">How should be composed your Password?</summary>
+    <p class="istruzioni">The password must contain at least one number, one uppercase letter, one lowercase letter, and at least 8 characters in total.</p>
+</details></fieldset>
+<legend>Select your account-type:<fieldset class="type"><label for="account-type">Personal<input type="radio" id="account-type" name="account-type" checked/></label>
+<label for="account-type">Business<input type="radio" id="account-type" name="account-type"/></label>
+</fieldset></legend>
+<fieldset class="gender"><legend>Select your gender
+    <select placeholder="Select the gender">
+    <option>Male</option>
+    <option>Female</option>
+    <option>Croissant</option>
+</select></legend>
+    <legend>How did you hear about us?
+       <select>
+        <option>From Social Media</option>
+        <option>From a pop-up</option>
+       </select>
+    </legend>
+</fieldset>
+<fieldset>
+    <label for="Terms-condition"><input class="Terms-condition" type="checkbox" required/> I accept the <a href="">Terms and conditions</a></label>
+    <input class="submit" type="submit"/>
+</fieldset>
+</form>
+<fieldset>
+<footer><p>That was our page to register your data. Have a good day!</p></footer></fieldset>
+</body>
+</main>
+</html>
